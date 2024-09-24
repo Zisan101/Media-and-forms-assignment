@@ -1,0 +1,56 @@
+<!-- Create a sign-up and sign-in form with proper validation -->
+ Ans: <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Sign Up and Sign In Form</title>
+ </head>
+ <body>
+ 
+     <h2>Sign Up Form</h2>
+     <form action="/submit-signup" method="post">
+         <label for="first-name">First Name:</label><br>
+         <input type="text" id="first-name" name="firstname" required><br><br>
+ 
+         <label for="last-name">Last Name:</label><br>
+         <input type="text" id="last-name" name="lastname" required><br><br>
+ 
+         <label for="email">Email:</label><br>
+         <input type="email" id="email" name="email" required><br><br>
+ 
+         <label for="password">Password:</label><br>
+         <input type="password" id="password" name="password" minlength="6" required><br><br>
+ 
+         <label for="confirm-password">Confirm Password:</label><br>
+         <input type="password" id="confirm-password" name="confirm-password" minlength="6" required><br><br>
+ 
+         <label for="age">Age:</label><br>
+         <input type="number" id="age" name="age" min="18" required><br><br>
+ 
+         <label for="gender">Gender:</label><br>
+         <input type="radio" id="male" name="gender" value="male" required> Male<br>
+         <input type="radio" id="female" name="gender" value="female" required> Female<br><br>
+ 
+         <label for="terms">
+             <input type="checkbox" id="terms" name="terms" required> I agree to the terms and conditions
+         </label><br><br>
+ 
+         <button type="submit">Sign Up</button>
+     </form>
+ 
+     <h2>Sign In Form</h2>
+     <form action="/submit-signin" method="post">
+         <label for="signin-email">Email:</label><br>
+         <input type="email" id="signin-email" name="email" required><br><br>
+ 
+         <label for="signin-password">Password:</label><br>
+         <input type="password" id="signin-password" name="password" required><br><br>
+ 
+         <button type="submit">Sign In</button>
+     </form>
+ 
+ </body>
+ </html>
+ 
+ 
